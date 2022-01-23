@@ -356,10 +356,9 @@
         </ul>
       </address>
       </div>
-      <!-- Присоединяйся -->
-<div class="join">
+      <!-- Присоединяйтесь -->
+  <div class="join">
   <b class="join-title">присоединяйтесь</b>
-
   <ul class="list social-media">
     <li class="item">
               <a href="" target="_blank" rel="noopener noreferrer" class="link sm-icon">
@@ -392,6 +391,18 @@
     </li>
   </ul>
 </div>
+<!-- Подпишитесь -->
+<div class="subscribe">
+  <b class="subscribe-title">подпишитесь на рассылку</b>
+  <div class="subscribe-box">
+  <input class="subscribe-input" type="email" name="subscribe-mail" id="subscribe-mail" placeholder="E-mail"/>
+  <button class="button primary" type="submit">Подписаться
+    <svg class="icon" aria-label="подписаться на рассылку"> 
+      <use href="./images/symbol-defs-opt.svg#icon-icon-send"></use>
+    </svg>
+  </button>
+</div>
+  </div>
       </div>
     </footer>
     <!-- Модальное окно -->
@@ -403,26 +414,42 @@
         </svg>
         </button>
         <form action="" class="modal-form">
-          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+          <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
           <div class="form-input">
             <label class="form-label" for="name">Имя</label>
-            <input class="input-field" type="text" name="name" id="name"/>
+            <div class="input-box">
+            <input class="input-field" type="text" name="name" id="name" minlength="4" autocomplete="off" required />
+            <svg class="icon form-avatar" aria-label="имя">
+              <use href="./images/symbol-defs-opt.svg#icon-person-black"></use>
+            </svg>
+            </div>
             </div>
           <div class="form-input">
             <label class="form-label" for="phone">Телефон</label>
-            <input class="input-field" type="tel" name="phone" id="phone"/>            
+            <div class="input-box">
+            <input class="input-field" type="tel" name="phone" id="phone" minlength="10" autocomplete="off" required />
+            <svg class="icon form-phone" aria-label="номер телефона">
+              <use href="./images/symbol-defs-opt.svg#icon-phone-black"></use>
+            </svg>
+            </div>            
           </div>
           <div class="form-input">
             <label class="form-label" for="mail">Почта</label>
-            <input class="input-field"  type="email" name="mail" id="mail"/>
+            <div class="input-box">
+            <input class="input-field"  type="email" name="mail" id="mail" autocomplete="off" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required/>
+            <svg class="icon form-mail" aria-label="электронная почта">
+              <use href="./images/symbol-defs-opt.svg#icon-email-black"></use>
+            </svg>
+            </div>
             </div>
           <div class="form-input">
           <label class="form-label" for="comment">Комментарий</label>  
           <textarea class="comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
         </div>
         <div class="form-agreement">
-        <input type="checkbox" name="agreement" id="agreement" value="">
-        <label for="agreement">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-link">Условия договора</a></label>
+        <input class="agreement-check" type="checkbox" name="agreement" id="agreement" value="agree" required>
+        
+        <label class="agreement-text" for="agreement">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-link">Условия договора</a></label>
         </div>
         <button class="button primary" type="submit">Отправить</button>
         </form>
