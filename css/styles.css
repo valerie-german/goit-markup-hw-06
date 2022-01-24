@@ -670,9 +670,13 @@ body {
 }
 
 
-.footer .join, .footer .subscribe {
+.footer .join {
   padding: 12px 0 0 0;
-  margin-right: 93px;
+  /* margin-right: 93px; */
+}
+.footer .subscribe {
+  padding: 12px 0 0 0;
+  margin-left: auto;
 }
 
 .join .social-media {
@@ -848,8 +852,10 @@ body {
   margin-bottom: 10px;  
   font-size: 12px;
   line-height: 1.17;
-  color: var(--primary-text-color);
- 
+  color: var(--primary-text-color); 
+}
+.form-input.comment-box{
+  margin-bottom: 10px;
 }
 
 .input-field{  
@@ -934,8 +940,8 @@ body {
   align-items: center;
   font-size: 14px;
   line-height: 1.71;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  /* margin-top: 10px;
+  margin-bottom: 30px; */
   outline: none;
 }
 .agreement-link{
@@ -949,6 +955,7 @@ body {
   outline: none;
 }
 .modal-form .button{
+  margin-top: 30px;
   width: 200px;
 }
 
